@@ -32,7 +32,7 @@ jobs:
           find . -name "*.js" -exec node --check {} +
 
 
-  gitleaks scan:
+  gitleaks_scan:
     name: gitleaks
     runs-on: self-hosted
     needs: compile

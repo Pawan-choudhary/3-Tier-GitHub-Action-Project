@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Backend (api)
+  - package-ecosystem: "npm"
+    directory: "/api"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5
+
+  # Frontend (client)
+  - package-ecosystem: "npm"
+    directory: "/client"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 5

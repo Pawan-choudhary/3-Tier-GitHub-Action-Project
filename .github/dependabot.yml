@@ -6,6 +6,7 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
+    target-branch: "dev"
 
   # Frontend (client)
   - package-ecosystem: "npm"
@@ -13,3 +14,4 @@ updates:
     schedule:
       interval: "daily"
     open-pull-requests-limit: 5
+    target-branch: "dev"

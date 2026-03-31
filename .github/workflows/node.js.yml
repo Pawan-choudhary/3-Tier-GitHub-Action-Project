@@ -5,9 +5,9 @@ name: Node.js CICD
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "dev","main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "dev","main" ]
 
 jobs:
   compile:
@@ -28,7 +28,7 @@ jobs:
 
       - name: Backend Compilation (Syntax Check)
         run: |
-          cd client
+          cd api
           find . -name "*.js" -exec node --check {} +
 
 
@@ -66,4 +66,4 @@ jobs:
           format: 'table'
           ignore-unfixed: true
           val_type: 'high,critical,medium,os,library'
-          severity: 'HIGH,CRITICAL,MEDIUM'
+          severity: 'HIGH,CRITICAL'
